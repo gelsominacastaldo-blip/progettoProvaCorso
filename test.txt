@@ -1,0 +1,70 @@
+git init
+comando add . per aggiungere
+git status
+git commit -m "Primo Commit"   per salvare
+
+gelso@Gelsomina MINGW64 /c/Git (master)
+$ git init
+Reinitialized existing Git repository in C:/Git/.git/
+
+gelso@Gelsomina MINGW64 /c/Git (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+gelso@Gelsomina MINGW64 /c/Git (master)
+$ git add .
+
+gelso@Gelsomina MINGW64 /c/Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   test (2).txt
+
+
+gelso@Gelsomina MINGW64 /c/Git (master)
+$ git commit -m "Primo Commit"^C
+
+gelso@Gelsomina MINGW64 /c/Git (master)
+$ git commit -m "Primo Commit"
+[master (root-commit) 8bb3e34] Primo Commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test (2).txt
+
+gelso@Gelsomina MINGW64 /c/Git (master)
+$ git branch -M main
+
+gelso@Gelsomina MINGW64 /c/Git (main)
+$ git remote add origin https://github.com/gelsominacastaldo-blip/progettoProvaCorso.git
+
+gelso@Gelsomina MINGW64 /c/Git (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 228 bytes | 114.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/gelsominacastaldo-blip/progettoProvaCorso.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+gelso@Gelsomina MINGW64 /c/Git (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test (2).txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+gelso@Gelsomina MINGW64 /c/Git (main)
+$
